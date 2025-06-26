@@ -139,6 +139,31 @@ const DataFlowSection: React.FC = () => {
                 </div>
               </div>
             </div>
+            <div
+                className="flex items-center justify-between gap-8 p-6 bg-gradient-to-r from-slate-700/20 to-slate-800/20 rounded-2xl backdrop-blur-sm border border-slate-600/30 hover:border-cyan-400/50 transition-all duration-300"
+                data-aos="fade-right"
+                data-aos-delay={7 * 150}
+              >
+                {/* From Node */}
+                <div className={`w-24 h-24 bg-gradient-to-r from-purple-400 to-pink-600 rounded-2xl flex items-center justify-center text-white font-bold text-sm text-center shadow-lg hover:scale-110 transition-transform`}>
+                 SOAR
+                </div>
+
+                {/* Arrow and Action */}
+                <div className="flex flex-col items-center gap-2">
+                  <span className="text-xs text-slate-400 bg-slate-800/50 px-3 py-1 rounded-full border border-slate-600/30 text-center">
+                    7. Notification incident
+                  </span>
+                  <div className="text-cyan-400 animate-pulse">
+                    {getArrowIcon('rigth')}
+                  </div>
+                </div>
+
+                {/* To Node */}
+                <div className={`w-24 h-24 bg-gradient-to-r from-teal-400 to-blue-600 rounded-2xl flex items-center justify-center text-white font-bold text-sm text-center shadow-lg hover:scale-110 transition-transform`}>
+                  Admin
+                </div>
+              </div>
           </div>
         </div>
       </div>
